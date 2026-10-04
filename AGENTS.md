@@ -29,10 +29,12 @@
   controls. Support narrow screens without horizontal overflow.
 - Keep essential content accessible without JavaScript and honor reduced motion
   if adding animation. Announce interactive status updates accessibly.
-- Preview with `python3 -m http.server 8000 --bind 127.0.0.1` from the repo root.
-- Check changed pages at mobile and desktop widths, relative links/assets,
-  keyboard interactions, and console errors. Also check deployed URLs after
-  publication when deployment access is available.
+- Validate relative links and asset paths, and check JavaScript syntax when changed.
+  Check deployed URLs after publication when deployment access is available.
+- Browser previews and layout checks are optional, not required for completion.
+  Do not install browsers or browser automation dependencies solely for validation.
+  If useful and available, preview with
+  `python3 -m http.server 8000 --bind 127.0.0.1` from the repo root.
 - There is no test suite. Use checks appropriate to the change; do not introduce
   build infrastructure or dependencies solely for basic static edits.
 
