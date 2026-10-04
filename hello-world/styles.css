@@ -1,0 +1,21 @@
+:root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #eaf1ff; color: #173568; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
+header { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1.5rem clamp(1.25rem, 5vw, 3rem); font-size: .8rem; }
+a { color: inherit; text-underline-offset: .3rem; }
+header a { text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
+header > span { display: inline-flex; align-items: center; color: #455e87; }
+main { width: min(100% - 2.5rem, 720px); flex: 1; margin: auto; padding: clamp(2rem, 7vh, 5rem) 0 2rem; text-align: center; }
+.sun { width: clamp(110px, 25vw, 160px); aspect-ratio: 1; margin: 0 auto 2.5rem; border-radius: 50%; background: #ffd56b; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 0 0 14px #ffd56b26; transform: rotate(-8deg); }
+.eyes { font-size: 2rem; font-weight: 800; letter-spacing: 1.25rem; padding-left: 1.25rem; line-height: 1; }
+.smile { width: 34px; height: 18px; border: 3px solid #173568; border-top: 0; border-radius: 0 0 30px 30px; margin-top: .5rem; }
+.eyebrow { font-size: .75rem; text-transform: uppercase; font-weight: 700; letter-spacing: .14em; color: #455e87; }
+h1 { font-size: clamp(2.6rem, 9vw, 5rem); letter-spacing: -.06em; line-height: 1.05; margin: 1rem 0; }
+.intro { font-size: clamp(1rem, 3vw, 1.2rem); line-height: 1.7; color: #455e87; margin-bottom: 2rem; }
+button { display: inline-flex; align-items: center; justify-content: center; gap: 1.5rem; border: 0; border-radius: 100px; padding: 1rem 1.5rem; min-height: 52px; font: inherit; font-weight: 650; background: #173568; color: #fff; cursor: pointer; transition: background .2s; }
+button[hidden] { display: none; }
+button:hover { background: #264d8d; }
+button:focus-visible, a:focus-visible { outline: 3px solid #173568; outline-offset: 5px; }
+.reply { min-height: 3rem; color: #455e87; line-height: 1.5; font-size: .9rem; }
+footer { padding: 1.5rem; text-align: center; font-size: .8rem; color: #455e87; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
