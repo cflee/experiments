@@ -20,13 +20,13 @@ If Pages needs to be enabled again, open repository **Settings → Pages**, choo
 1. Create a lowercase, hyphenated folder such as `color-playground/`.
 2. Add its `index.html` and keep its CSS, JavaScript, and assets in that folder.
 3. Add a link and description to the root `index.html`; update the displayed count.
-4. Check it locally, then push to `main`.
+4. Validate relative links, asset paths, and any JavaScript syntax, then push to `main`.
 
 Use relative URLs (`./styles.css`, `./assets/image.png`, `../` for the directory).
 Root-relative URLs like `/styles.css` skip the `/experiments/` project prefix
 and break on GitHub Pages. Keep existing folder names stable to preserve URLs.
 
-## Preview locally
+## Optional local preview
 
 From the repository root:
 
@@ -35,7 +35,8 @@ python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
 Open http://127.0.0.1:8000/ and http://127.0.0.1:8000/hello-world/.
-Check narrow mobile widths, keyboard navigation, and browser console errors.
+Browser previews and layout checks are optional. No browser or browser automation
+installation is required to contribute.
 The hello-world button progressively enhances the page when JavaScript is available.
 
 All files in the published tree are public. Never commit secrets or private data.
